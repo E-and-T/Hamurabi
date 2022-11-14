@@ -141,7 +141,6 @@ public class Hammurabi {
         }
     }
 
-
     private void finalSummary(int total, int yearlyDead, int population, int grain, int acres, int landValue) {
         System.out.println("Hammurabi you did great");
         System.out.println("Unfortunately" + total + " people have died.");
@@ -163,8 +162,6 @@ public class Hammurabi {
         }
         return starved;
     }
-
-
 
     public boolean uprising(int population, int howManyPeopleStarved) {
         if (howManyPeopleStarved > 0.45 * population){
