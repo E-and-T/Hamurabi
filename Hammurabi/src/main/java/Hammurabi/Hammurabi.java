@@ -68,7 +68,7 @@ public class Hammurabi {
             landValue = newCostOfLand();
             year++;
         }
-        finalSummary(totalDead, yearlyDead, population, bushels, acres, landValue);
+        finalSummary(year, totalDead, yearlyDead, population, bushels, acres, landValue);
     }
 
     private void printGreeting() {
@@ -141,9 +141,11 @@ public class Hammurabi {
         }
     }
 
-    private void finalSummary(int total, int yearlyDead, int population, int grain, int acres, int landValue) {
-        System.out.println("Hammurabi you did great");
-        System.out.println("Unfortunately" + total + " people have died.");
+    public void finalSummary(int year, int total, int yearlyDead, int population, int grain, int acres, int landValue) {
+        if(year == 10){
+            System.out.println("Hammurabi you did great");
+        }
+        System.out.println("Unfortunately "+ total +" people have died.");
     }
 
     public int plagueDeaths(int population) {
